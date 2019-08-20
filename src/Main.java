@@ -1,4 +1,5 @@
 //Paramjeet Kaur  StudentId:C0747429
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -18,9 +19,16 @@ public class Main {
 			// 3. DEBUG: Output what the user typed in 
 			System.out.println("You entered: " + choice);
 			System.out.println();
+			if(choice==1)
+			{
+				//calculateAreaOfTriangle x=new calculateAreaOfTriangle(); 
+				
+			}
 		}
 	}
-	
+	 
+	    
+	 
 	public static void showMenu() {
 		System.out.println("AREA GENERATOR");
 		System.out.println("==============");
