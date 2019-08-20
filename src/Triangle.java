@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Triangle extends Shape implements TwoDimensionalShapeInterface{
 	private Double base;
 	private Double height;
-	public Triangle(String Color,Double base,Double height) {
-		super(Color);
+	public Triangle(String Color,Double base,Double height,ArrayList<Shape> s) {
+		super(Color,s);
 		this.base=base;
 		this.height=height;
 		// TODO Auto-generated constructor stub

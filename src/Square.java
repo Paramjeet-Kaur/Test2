@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 
 public class Square extends Shape implements TwoDimensionalShapeInterface {
 private Double Side;
 
-	public Square(String Color,Double Side) {
-		super(Color);
+	public Square(String Color,Double Side,ArrayList<Shape> s) {
+		super(Color,s);
 		this.Side=Side;
 		// TODO Auto-generated constructor stub
 		
@@ -28,5 +29,6 @@ private Double Side;
 		// TODO Auto-generated method stub
 		
 	}
+	
 
 }

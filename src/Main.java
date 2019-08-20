@@ -8,7 +8,7 @@ public class Main {
 		Scanner keyboard = new Scanner(System.in);
 		int choice = 0;
 		
-		while (choice != 4) {
+		while (choice != 3) {
 			// 1. show the menu
 			showMenu();
 	
@@ -21,9 +21,29 @@ public class Main {
 			System.out.println();
 			if(choice==1)
 			{
-				//calculateAreaOfTriangle x=new calculateAreaOfTriangle(); 
+				System.out.println("Enter the base of triangle");
+				int base1=keyboard.nextInt();
+				System.out.println("Enter the height of triangle");
+				int height=keyboard.nextInt();
+				Double Area=0.5*base1*height;
+				System.out.println("Area of triangle is "+Area);
 				
 			}
+			if(choice==2)
+			{
+				System.out.println("Enter the side of square");
+				Double side=keyboard.nextDouble();
+				Double Area=side*side;
+				System.out.println("Area of square is "+Area);
+				
+			}
+			
+			if(choice==3)
+			{
+				System.out.println("you exit the system");
+				
+			}
+	
 		}
 	}
 	 
@@ -34,8 +54,7 @@ public class Main {
 		System.out.println("==============");
 		System.out.println("1. Triangle");
 		System.out.println("2. Square");
-		System.out.println("3. Rectangle");
-		System.out.println("4. Exit");
+		System.out.println("3. Exit");
 	}
 
 }
